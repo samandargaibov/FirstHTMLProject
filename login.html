@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+<style>
+    .myDiv{
+        width: 180px;
+        height: 30px;
+        border-radius: 5px;
+        border-color: rgb(230, 226, 226);
+        background-color: #f2f3f5;
+    }
+    .btn{
+        width: 165px;
+        height: 40px;
+        background-color: lawngreen;
+        font-size: 15px;
+        border-color: lawngreen;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div style="width: 80%;">
+    <form style="border: 1px solid #05577c;border-radius: 2%; width: 30%; height: 500px; background: azure;">
+        <h1 style="text-align:center; color: cornflowerblue; font-family: cursive; margin-top: 15px;">Sign Up</h1>
+        <div style="margin-top: 4%; margin-left: 3%;">
+        <div style="display: inline; position: relative;">
+        <input class="myDiv" autofocus type="text" required placeholder="Enter your Firstname">
+        <input class="myDiv" style="margin-left: 14px;" type="text" required placeholder="Enter your Lastname">
+        </div>
+        <br><br>
+        <input class="myDiv" style="width: 385px;" type="password" required placeholder="Enter your password" minlength="8" maxlength="16">
+        <br><br>
+        <input class="myDiv" style="width: 385px;" type="mail" required placeholder="Enter your email">
+        <br><br>
+        <label>Birthdate:</label>
+        <input class="myDiv" style="width: 195px;margin-left: 10px;" type="date" value="2023-02-17">
+        <br><br>
+        <label for="countries">Choose country:</label>
+        <select style="width: 100px; height: 30px;border-radius: 5px; border-color: rgb(230, 226, 226); background-color: aliceblue;margin-left: 5px;">
+            <optgroup label="Azerbaijan"></optgroup>
+            <option value="">Baki</option>
+            <option value="">Gence</option>
+            <option value="">Shamaxi</option>
+            <option value="">Sumqayit</option>
+            <optgroup label="Turkey"></optgroup>
+            <option value="">Istanbul</option>
+            <option value="">Edirne</option>
+            <option value="">Ankara</option>
+            <option value="">Mersin</option>
+            <optgroup label="Georgia"></optgroup>
+            <option value="">Tbilisi</option>
+            <option value="">Batumi</option>
+        </select>
+        <br><br>
+        <label>Male:</label>
+        <input type="radio" name="gender" value="Male">
+        <label>Female:</label>
+        <input type="radio" name="gender" value="Female">
+        <br><br>
+        <input required type="checkbox" name="" id="">
+        <label style="font-size: 14px;" for="">I agree terms and conditions</label>
+        <br><br>
+        <div style="text-align: center; margin-top: 10px;">
+        <a href="/index.html"><button class="btn">Create Account</button></a>
+        </div>
+    </div>
+    </form>
+    <a target="_blank" href="/index.html"><button class="btn">Next Page</button></a>
+</div>
+</body>
+</html>
